@@ -1,0 +1,12 @@
+Theme: My theme is going to be a cryptid theme. 
+
+Use Cases
+1. Find descriptions and details of cryptids.
+2. Find locations of each cryptid sighting.
+3. Hear famous accounts of each cryptid.
+4. Get the latest cryptid news
+5. Allow users to signup to get notifications
+6. Allow signups to share cryptid stories
+7. Allow users to buy cryptid products
+
+
