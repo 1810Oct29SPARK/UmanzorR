@@ -1,0 +1,98 @@
+body {
+    background-image: url(https://i.stack.imgur.com/9WYxT.png);
+    color: navy
+}
+#firststart {
+    border: 2px solid black;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+    background-color: antiquewhite;
+    padding: 20px
+}
+.list1 {
+    float: left;
+    border: 2px solid black;
+    font-size: 150%
+}
+.aside1 {
+    float: right;
+    font-size: 125%
+}
+.players {
+    border-top: double;
+}
+
+.images{
+    width: 100%;
+    margin: auto;
+    display: block;
+    position: relativ
+}
+
+.images p {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+  }
+
+#description {
+    float: right;
+    font-size: 125%
+}
+
+#imgborder {
+    border: 2px solid black;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+    background-color: antiquewhite;
+}
+
+#links {
+     text-decoration: none;
+     color: black;
+     
+}
+
+.navbar {
+    display: block;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    background-color: navy;
+    overflow: hidden;
+}
+
+.head {
+    text-align: center;
+    border-bottom: double;
+    border-width: 5px;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+    background-color: antiquewhite;
+}
+
+.imgborder {
+    border: 2px solid black;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+    background-color: antiquewhite;
+}
+
+#links2 {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    background-color: #111111
+}
+a:visited {
+    color: white
+}
