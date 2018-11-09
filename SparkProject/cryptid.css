@@ -1,0 +1,178 @@
+#body1 {
+    background-image: url(http://dianeleonardart.weebly.com/uploads/2/7/9/0/27908657/479448_orig.png);
+    margin: 0;
+    padding: 0
+}
+
+#body2 {
+    background-color: #000000;
+}
+
+#header1 {
+    background-color: #555555;
+    color: beige;
+    font-size: 250%;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    position: relative;
+
+        
+}
+
+#menuitem {
+    border-right-color:rgb(255, 255, 255);
+    border-right-style:solid;
+    border-right-width:1px;
+    color:rgb(255, 255, 255);
+    display:block;
+    float:left;
+    font-family:Helvetica, Arial, Tahoma, sans-serif;
+    font-size:12px;
+    font-weight:700;
+    height:36px;
+    line-height:36px;
+    list-style-type:square;
+    position:relative;
+    text-align:center;
+    text-size-adjust:100%;
+    width:64.6625;
+    padding: 5px
+}
+
+#menuhead {
+    background-color:#555555;
+    color:rgb(51, 51, 51);
+    display:inline-block;
+    font-family:Helvetica, Arial, Tahoma, sans-serif;
+    font-size:12px;
+    font-weight:700;
+    height:36px;
+    line-height:21.6px;
+    list-style-type:disc;
+    margin-block-end:20px;
+    margin-block-start:0px;
+    margin-bottom:20px;
+    margin-inline-end:0px;
+    margin-inline-start:0px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:0px;
+    padding-bottom:0px;
+    padding-inline-start:0px;
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:0px;
+    position:relative;
+    text-align:left;
+    text-size-adjust:100%;
+    width:960px;
+    z-index:300;
+    left: 50%
+}
+
+a:link{
+    color: white;
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+    text-decoration: none
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: burlywood
+}
+
+#information {
+    background-color: #555555;
+    color: beige;
+    width: 90%
+}
+
+p {
+    margin: 5px;
+    padding:5px
+}
+
+#header2 {
+border-top-color:rgb(187, 187, 187);
+border-top-style:solid;
+border-top-width:2px;
+color:rgb(55, 55, 55);
+display:block;
+font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:15px;
+font-stretch:100%;
+font-style:normal;
+font-variant-caps:normal;
+font-variant-east-asian:normal;
+font-variant-ligatures:normal;
+font-variant-numeric:normal;
+font-weight:300;
+height:242.8px;
+line-height:24.375px;
+padding-bottom:10px;
+position:relative;
+width:842.4px;
+z-index:9999;
+}
+
+#img1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left:-6.9%;
+}
+
+#menuhead2 {
+    background-color:#555555;
+    color:rgb(51, 51, 51);
+    display:inline-block;
+    font-family:Helvetica, Arial, Tahoma, sans-serif;
+    font-size:12px;
+    font-weight:700;
+    height:36px;
+    line-height:21.6px;
+    list-style-type:disc;
+    margin-block-end:20px;
+    margin-block-start:0px;
+    margin-bottom:0px;
+    margin-inline-end:0px;
+    margin-inline-start:0px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:0px;
+    padding-bottom:0px;
+    padding-inline-start:0px;
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:0px;
+    position: relative;;
+    text-align:center;
+    text-size-adjust:100%;
+    width:600px;
+    z-index:300;
+}
+
+#article2 {
+    background-color: antiquewhite;
+    display:inline-block;
+    width: 600px;
+}
+
+#blah {
+    position: relative;
+    
+
+}
+
+#logo1 {
+    float: left;
+    border-radius: 50%;
+    width: 250px;
+    height: 205px;
+   
+}
