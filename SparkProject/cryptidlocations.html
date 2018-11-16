@@ -5,32 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Locations</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="cryptid.css" />
     <script src="cryptid.js"></script>
 </head>
 <body id="body1">
      <div id="header1">
         <img id="logo1" src="logo.jpg" width=200 height="200">
-        <ul id="menuhead">
-            <li id="menuitem"><a href="cryptid.html">About</a></li>
-            <li id="menuitem"><a href="cryptiddatabase.html">Cryptid Database</a></li>
-            <li id="menuitem"><a href="cryptidnews.html">Cryptid News</a></li>
-            <li id="menuitem"><a href="cryptidlocations.html">Locations</a></li>
-            <li id="menuitem"><a href="cryptidstore.html">Store</a></li>
-            <li id="menuitem"><a href="cryptid.html">Sign Up</a></li>
-            <li id="menuitem"><a href="cryptid.html">Contact</a></li>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" href="cryptid.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cryptiddatabase.html"> Cryptid Database</a>
+            </li>
+            <li>
+                <a class="nav-link active" href="cryptidlocations.html">Cryptid Locations</a>
+            </li>
+            <li>
+                <a class="nav-link" href="cryptidstore.html">Store</a>
+            </li>
+            <li>
+                <a class="nav-link" href="cryptidsignup.html">Sign Up</a>
+            </li>
+            <li>
+                <a class="nav-link" href="cryptidcontact.html">Contact</a>
+            </li>
         </ul>
-            <header id="blah">
-                <h1>Crypto-Zoo</h1>
-            </header>
+        <header id="blah">
+            <h1>Crypto-Zoo</h1>
+        </header>
     </div>
     <center>
     <div id="information">
         <article>
             <h1>Cryptid Locations</h1>
-            <p>Cryptozoology, defined by Merriam-Webster, is the <q>the study of and search for animals and especially legendary animals.</q></p> 
-            <p>Cryptozoologist also attempt to prove the existence of these creatures.</p>
+            <p>Cryptid sightings have been reported all over the world. These are the locations where</p> 
+            <p>each cryptid is most commonly seen.</p>
         </article>
+    </div>
+    <div id="information">
+        <ul class="list-group">
+            <li id="list" class="list-group-item">Sasquatch- Seen all over North America</li>
+            <li id="list" class="list-group-item">Mothman- Most commonly seen in North Viginia</li>
+            <li id="list" class="list-group-item">Champ- Located in Lake Champlain</li>
+            <li id="list" class="list-group-item">Wendigo- Located in South Canada</li>
+            <li id="list" class="list-group-item">Loveland Frog- Located in Loveland, SOH</li>
+            <li id="list" class="list-group-item">Melon Heads- Located in Michigan and Ohio.</li>
+            <li id="list" class="list-group-item">The Goatman- Located in Maryland</li>
+            <li id="list" class="list-group-item">The Jersey Devil- Located in New Jersey.</li>
+            <li id="list" class="list-group-item">Jackalope- Located largely in North America.</li>
+            <li id="list" class="list-group-item">Honey Island Swamp Monster- Located in Louisiana</li>
+        </ul>
     </div>
     </center>
     <br><br>
@@ -43,6 +69,17 @@
         </article>
     </div>
     </center>
-    
+    <center>
+    <div id="map">
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLy6Ew7arOF6-Re2THu-vFeHHPxdLgXEg&callback=initMap">
+        </script>
+    </div>
+    </center>
+    <div>
+
+    </div>
+    <!-- <center> 
+            <iframe id="map" src="https://www.google.com/maps/d/u/1/embed?mid=1BzcnumyPHl9BSFv7bBgYQo9b4qQoytGo"></iframe>    
+    </center>-->
 </body>
 </html>
