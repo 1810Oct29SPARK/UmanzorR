@@ -1,6 +1,6 @@
 package com.rev.transport;
 
-public class Car extends Vehicle  implements Steerable{
+public class Car extends Vehicle implements Steerable, Comparable   {
 
 	public Car(int yearManufactured, String model, String make, double milesSinceOilChange) {
 		super();
@@ -22,7 +22,10 @@ public class Car extends Vehicle  implements Steerable{
 	private double milesSinceOilChange;
 
 	@Override
-	public void move() {
+	public void move() throws MaintenanceExceptions {
+		if (this.milesSinceOilChange >= recommendedmilesBetweenOilchanges) {
+			
+		}
 		System.out.println("car is moving");
 
 	}
@@ -63,15 +66,36 @@ public class Car extends Vehicle  implements Steerable{
 	public String toString() {
 		return "Car [yearManufactured=" + yearManufactured + ", model=" + model + ", make=" + make
 				+ ", milesSinceOilChange=" + milesSinceOilChange + "]";
+		
+	
+	}
+
+	@Override
+	public int compareTo(Object o) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 	@Override
 	public void turnRight() {
-		System.out.println("turn wheel clockwise");
+		// TODO Auto-generated method stub
+		
 	}
 
 	@Override
 	public void turnLeft() {
-		System.out.println("turn wheel counterclockwise");
+		// TODO Auto-generated method stub
+		
 	}
+	
+	@Override
+	public int compareTo(Car o) {
+		return this.model.compareTo(o.getModel())+this.model.getYearManufactured-o.getYearmanufactured;
+	}
+
+	
+	}
+	
+
+	
 }

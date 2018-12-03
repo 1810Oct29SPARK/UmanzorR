@@ -13,9 +13,13 @@ public class Tornado extends Vehicle {
 	}
 	
 	private double maxWindSpeed;
+	private boolean isInSuperCell;
 
 	@Override
-	public void move() {
+	public void move() throws MaintenanceExceptions {
+		if (!this.isInSuperCell) {
+			throw new MaintenanceExceptions("weather machine incorrectly configured");
+		}
 		System.out.println("DESTROYING THE CITY");
 	}
 

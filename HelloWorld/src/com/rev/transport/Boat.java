@@ -16,9 +16,18 @@ public class Boat extends Vehicle implements Steerable{
 
 	protected String color;
 	protected double hullLengthInMeters;
+	protected boolean hasHoleinHull;
+
+	public boolean isHasHoleinHull() {
+		return hasHoleinHull;
+	}
+
+	public void setHasHoleinHull(boolean hasHoleinHull) {
+		this.hasHoleinHull = hasHoleinHull;
+	}
 
 	@Override
-	public void move() {
+	public void move() throws MaintenanceExceptions {
 		System.out.println("boat is moving");
 
 	}
