@@ -27,11 +27,10 @@ window.onload(getDadJokes());
 
 function insert(){
     var para = document.createElement("p");
-    var node = document.createTextNode("This is new.");
+    var node = document.createTextNode(".... line");
     para.appendChild(node);
     var element = document.getElementById("div1");
     element.appendChild(para);
 }
 
-window.onload(insert());
 
