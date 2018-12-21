@@ -4,7 +4,7 @@ import java.sql.Blob;
 
 public class Reimbursements {
 
-	public Reimbursements(int reimbursementid, int id, String type, String description, Blob image, int amount) {
+	public Reimbursements(int reimbursementid, int id, String type, String description, Blob image, double amount) {
 		super();
 		this.reimbursementid = reimbursementid;
 		this.id = id;
@@ -22,7 +22,7 @@ public class Reimbursements {
 	private String type;
 	private String description;
 	private Blob image;
-	private int amount;
+	private double amount;
 
 	public int getReimbursementid() {
 		return reimbursementid;
@@ -64,7 +64,7 @@ public class Reimbursements {
 		this.image = image;
 	}
 
-	public int getAmount() {
+	public double getAmount() {
 		return amount;
 	}
 

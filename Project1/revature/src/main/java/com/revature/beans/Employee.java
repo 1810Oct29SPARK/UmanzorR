@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class Employee {
 
 	public Employee(int id, String firstname, String lastname, String middle, String title, int manager,
-			LocalDate birthdate, String address, int zipcode, String email, String phone) {
+			String birthdate, String address, int zipcode, String email, String phone) {
 		super();
 		this.id = id;
 		this.firstname = firstname;
@@ -13,6 +13,11 @@ public class Employee {
 		this.middle = middle;
 		this.title = title;
 		this.manager = manager;
+		this.birthdate = birthdate;
+		this.address = address;
+		this.zipcode = zipcode;
+		this.email = email;
+		this.phone = phone;
 	}
 
 	public Employee() {
@@ -24,7 +29,7 @@ public class Employee {
 	private String middle;
 	private String title;
 	private int manager;
-	private LocalDate birthdate;
+	private String birthdate;
 	private String address;
 	private int zipcode;
 	private String email;
@@ -78,11 +83,11 @@ public class Employee {
 		this.manager = manager;
 	}
 
-	public LocalDate getBirthdate() {
+	public String getBirthdate() {
 		return birthdate;
 	}
 
-	public void setBirthdate(LocalDate birthdate) {
+	public void setBirthdate(String birthdate) {
 		this.birthdate = birthdate;
 	}
 

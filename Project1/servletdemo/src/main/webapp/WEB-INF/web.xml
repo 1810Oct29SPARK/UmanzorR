@@ -19,4 +19,22 @@
     <servlet-name>BearServlet</servlet-name>
     <url-pattern>/bears</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>CalculatorServlet</servlet-name>
+    <servlet-class>com.revature.servlet.CalculatorServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CalculatorServlet</servlet-name>
+    <url-pattern>/calculator</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ResultServlet</display-name>
+    <servlet-name>ResultServlet</servlet-name>
+    <servlet-class>com.revature.servlet.ResultServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ResultServlet</servlet-name>
+    <url-pattern>/result</url-pattern>
+  </servlet-mapping>
 </web-app>
