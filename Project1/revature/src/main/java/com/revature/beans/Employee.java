@@ -3,6 +3,15 @@ package com.revature.beans;
 import java.time.LocalDate;
 
 public class Employee {
+	
+	public Employee(int employeeId, String firstname, String lastname, String email) {
+		super();
+		this.id = employeeId;
+		this.firstname = firstname;
+		this.lastname = lastname;
+		this.email = email;
+	}
+
 
 	public Employee(int id, String firstname, String lastname, String middle, String title, int manager,
 			String birthdate, String address, int zipcode, String email, String phone) {

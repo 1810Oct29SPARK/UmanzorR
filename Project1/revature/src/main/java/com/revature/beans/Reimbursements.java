@@ -13,6 +13,15 @@ public class Reimbursements {
 		this.image = image;
 		this.amount = amount;
 	}
+	
+	public Reimbursements(int reimbursementid, int id, String type, String description,  double amount) {
+		super();
+		this.reimbursementid = reimbursementid;
+		this.id = id;
+		this.type = type;
+		this.description = description;
+		this.amount = amount;
+	}
 
 	public Reimbursements() {
 	}

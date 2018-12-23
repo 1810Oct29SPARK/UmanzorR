@@ -1,6 +1,7 @@
 package com.revature.main;
 
 import java.io.IOException;
+
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
@@ -19,7 +20,11 @@ import com.revature.util.ConnectionUtil;
 public class Driver {
 
 	public static void main(String[] args) {
-		init();
+//		init();
+		CredentialsDao log = new CredentialsDAOImpl();
+		EmployeesDao emp = new EmployeesDAOImpl();
+	}
+
 //		EmployeesDao emp = new EmployeesDAOImpl();
 //		List<Employee> em = emp.getEmployee();
 //		for (Employee e : em) {
@@ -42,9 +47,13 @@ public class Driver {
 //		deleteEmployee.deleteEmployee(10144);
 //	}
 //	
-		CredentialsDao addNewCredentials = new CredentialsDAOImpl();
-		addNewCredentials.addCredentials("JoTe", "12345", 10143);
-	}
+//		CredentialsDao addNewCredentials = new CredentialsDAOImpl();
+//		addNewCredentials.addCredentials("JoTe", "12345", 10143);
+//	}
+
+//		Credentials cred = log.getCredentialsEmployeeUsername("JoTe");
+//		System.out.println(cred.getUsername());
+//	}
 
 	static void init() {
 		try {

@@ -49,24 +49,22 @@ public class CredentialsDAOImpl implements CredentialsDao {
 		}
 	}
 
-	public Credentials getCredentialsEmployeeId(int id) {
-		Credentials credential = new Credentials();
-		try (Connection con = ConnectionUtil.getConnection(filename)) {
-			String sql = "SELECT * FROM LOGIN_INFO " + "WHERE EMPLOYEE_ID = ?";
+	public int getCredentialsEmployeeUsername(String username) {
+		try(Connection con = ConnectionUtil.getConnection(filename)){
+			String sql = "SELECT EMPLOYEID FROM CREDENTIALS " + 
+						"WHERE USERNAME = ?";
 			PreparedStatement pstmt = con.prepareStatement(sql);
 			ResultSet rs = pstmt.executeQuery();
-			while (rs.next()) {
-				String username = rs.getString("USERNAME");
-				String password = rs.getString("PASSWORD");
-				int employeeid = rs.getInt("EMPLOYEEID");
-				credential = new Credentials(username, password, id);
+			while(rs.next()) {
+				int employeeId = rs.getInt("EMPLOYEE_ID");
+				return employeeId;
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} catch (IOException e1) {
 			e1.printStackTrace();
 		}
-		return credential;
+		return -1;
 	}
 
 	public List<Credentials> getCredentials() {
@@ -80,7 +78,7 @@ public class CredentialsDAOImpl implements CredentialsDao {
 				String username = rs.getString("USERNAME");
 				String password = rs.getString("PASSWORD");
 				int id = rs.getInt("EMPLOYEEID");
-				c.add(new Credentials(username, password, id));
+				c.add(new Credentials(username, password));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -88,6 +86,28 @@ public class CredentialsDAOImpl implements CredentialsDao {
 			e.printStackTrace();
 		}
 		return c;
+	}
+	
+	public Credentials login(String username, String password) {
+		Credentials cl = new Credentials(null, null, 0);
+		try (Connection con = ConnectionUtil.getConnection(filename)) {
+			String sql = "SELECT * FROM CREDENTIALS WHERE USERNAME = ?";
+			PreparedStatement stmt = con.prepareStatement(sql);
+			stmt.setString(1, username);
+//			stmt.setString(2, password);
+			ResultSet rs = stmt.executeQuery();
+			while (rs.next()) {
+				String username1 = rs.getString("USERNAME");
+				String password1 = rs.getString("PASSWORD");
+				int id1 = rs.getInt("EMPLOYEEID");
+				cl = new Credentials(username1, password1, id1);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return cl;
 	}
 
 }

@@ -1,28 +1,38 @@
 package com.revature.service;
 
 import com.revature.beans.Credentials;
+import com.revature.beans.Employee;
+import com.revature.dao.EmployeesDao;
+import com.revature.dao.EmployeesDAOImpl;
+import com.revature.dao.CredentialsDAOImpl;
+import com.revature.dao.CredentialsDao;
 import com.revature.model.User;
+import com.revature.util.ReimbursementUtil;
 
 public class AuthenticationService {
-
+//	
+//	CredentialsDao log = new CredentialsDAOImpl();
+//	EmployeesDao emp = new EmployeesDAOImpl();
+	
+	CredentialsDao c = new CredentialsDAOImpl();
+	EmployeesDao e = new EmployeesDAOImpl();
+	
 	public AuthenticationService() {
 	}
 	
-	public User isValidUser(Credentials credentials) {
-		User u = null;
+	public Employee isValidUser(Credentials credentials) {
 		String username = credentials.getUsername();
 		String password = credentials.getPassword();
-		//this is AUTHENTICATION (does the user exist in the system?)
-		//now AUTHORIZATION (what can the user access within the system?) (user roles)
-		//take credentials and return the User to which they belong if it exists
+		Credentials cl = c.login(username, password);
+		int id = cl.getId();
+		System.out.println(id);
+		Employee empl = null;
 		if (username != null && password != null) {
-			//for now... this is fake!! 
-			if (username.equals("Merlin") && password.equals("wizard")) {
-				u = new User(5,username,"Merlin","Cat","wizcat@tampa.com");
+			if (username.equals(cl.getUsername()) && password.equals(cl.getPassword())) {
+				empl =  e.getEmployee(id);
+				System.out.println(empl);
 			}
 		}
-		return u;
+		return empl;
 	}
-	
-
 }

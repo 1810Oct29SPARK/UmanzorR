@@ -14,6 +14,10 @@ public interface CredentialsDao {
 
 	public void deleteCredentialsByEmployeeId(int id);
 
-	public Credentials getCredentialsEmployeeId(int id);
+	public int getCredentialsEmployeeUsername(String username);
+	
+	public Credentials login(String username, String password);
+
+
 
 }
