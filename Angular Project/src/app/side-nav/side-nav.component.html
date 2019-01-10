@@ -1,0 +1,17 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="true" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="!(isHandset$ | async)">
+    <mat-toolbar></mat-toolbar>
+    <mat-nav-list>
+      <a class="content" routerLink="/profile" mat-list-item href=""  routerLinkActive="active"> <i id="nav-div" class="material-icons">person
+        </i>
+      </a>
+      <a mat-list-item href="#"></a>
+      <a mat-list-item href="#"></a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+
+    <!-- Add Content Here -->
+  </mat-sidenav-content>
+</mat-sidenav-container>
